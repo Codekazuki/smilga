@@ -1,5 +1,6 @@
 import { Amazonn } from "./Amazon";
 import "./App.css";
+import { Link } from "./Link";
 import { Test } from "./Test";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Test />
       <Amazonn />
+      <Link />
     </div>
   );
 }

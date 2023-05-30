@@ -1,16 +1,7 @@
-import { Amazonn } from "./Amazon";
 import "./App.css";
-import { Link } from "./Link";
-import { Test } from "./Test";
 
 function App() {
-  return (
-    <div className="App">
-      <Test />
-      <Amazonn />
-      <Link />
-    </div>
-  );
+  return <div className="App">Hello</div>;
 }
 
 export default App;

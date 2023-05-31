@@ -1,15 +1,33 @@
 import React from "react";
+import "./First.css";
 
 export function First() {
   return (
-    <section>
-      <h2>hello</h2>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-        nostrum eligendi magnam tempora soluta ut obcaecati adipisci sequi,
-        quia, qui non molestias vel! Totam veritatis vitae fuga temporibus,
-        praesentium dignissimos
-      </h1>
+    <section className="first">
+      <Book />
+      <Book />
+      <Book />
+      <Book />
     </section>
   );
 }
+
+const Book = () => {
+  return (
+    <div className="book">
+      <Authour />
+      <Image />
+      <Title />
+      <Messsage />
+    </div>
+  );
+};
+const Authour = () => <h1>Ayodele Agbowuro</h1>;
+const Image = () => (
+  <img
+    src="https://media.istockphoto.com/id/1362996689/photo/chocolate-splashed-on-transparent-background-clipping-path.webp?b=1&s=170667a&w=0&k=20&c=MPRdBa3qccn0WtMq7jL79WntZtnwf-GqxnmRjt6dYus="
+    alt=""
+  />
+);
+const Title = () => <h4>the title</h4>;
+const Messsage = () => <h3>hiiiiiiiiiiiiii</h3>;

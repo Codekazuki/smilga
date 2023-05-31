@@ -1,0 +1,40 @@
+.book {
+  text-align: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: rgb(165, 201, 81);
+}
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.first {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .first {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .first {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 2560px) {
+  .first {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.book h1,
+h3,
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(10, 1, 1);
+}

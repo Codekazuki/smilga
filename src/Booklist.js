@@ -1,3 +1,5 @@
+import "./First.css";
+
 const player1 = {
   name: "Lampard",
   position: "Midfield",
@@ -13,11 +15,12 @@ const player3 = {
   name: "Scholes",
   position: "Midfield",
   image: "./asset/scholes.jpg",
+  alt: "Central midfielder",
 };
 
 const Booklist = () => {
   return (
-    <div>
+    <div className="first">
       <Team
         name={player1.name}
         position={player1.position}
@@ -32,6 +35,7 @@ const Booklist = () => {
         name={player3.name}
         position={player3.position}
         image={player3.image}
+        alt={player3.alt}
       />
     </div>
   );
@@ -39,10 +43,10 @@ const Booklist = () => {
 
 const Team = (props) => {
   return (
-    <section>
+    <section className="book">
       <h1> {props.name} </h1>
       <h2>{props.position}</h2>
-      <img src={props.image} alt={props.position} />
+      <img src={props.image} alt={props.alt} />
     </section>
   );
 };

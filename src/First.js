@@ -22,7 +22,7 @@ const Newbook = () => {
     </section>
   );
 };
-const Book = () => {
+const Book = (props) => {
   return (
     <div className="book">
       <Authour />

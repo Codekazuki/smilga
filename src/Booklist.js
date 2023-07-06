@@ -42,11 +42,12 @@ const Booklist = () => {
 };
 
 const Team = (props) => {
+  const { name, position, image, alt } = props;
   return (
     <section className="book">
-      <h1> {props.name} </h1>
-      <h2>{props.position}</h2>
-      <img src={props.image} alt={props.alt} />
+      <h1> {name} </h1>
+      <h2>{position}</h2>
+      <img src={image} alt={alt} />
     </section>
   );
 };

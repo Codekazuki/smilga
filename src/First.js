@@ -45,3 +45,5 @@ const Image = () => (
 );
 const Title = () => <h4>the title</h4>;
 const Messsage = () => <h3>hiiiiiiiiiiiiii</h3>;
+
+const disciples = ["paul", "Peter"];

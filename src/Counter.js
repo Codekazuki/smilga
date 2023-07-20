@@ -9,6 +9,9 @@ const Counter = () => {
   let decreaseAge = () => {
     setAge(age - 1);
   };
+  let doubleAge = () => {
+    setAge(age * 2);
+  };
   let resetAge = () => {
     setAge(0);
   };
@@ -19,8 +22,10 @@ const Counter = () => {
         <button onClick={decreaseAge}>Deduct</button>
         <button onClick={resetAge}>Reset</button>
         <button onClick={increaseAge}>Add </button>
+        <button onClick={doubleAge}>Double the Age</button>
       </div>
     </div>
   );
 };
+
 export default Counter;

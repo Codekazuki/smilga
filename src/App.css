@@ -7,5 +7,5 @@
 .buttons {
   display: flex;
   gap: 4rem;
-  width: 80%;
+  justify-content: space-around;
 }
